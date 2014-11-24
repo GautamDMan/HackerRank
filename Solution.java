@@ -34,6 +34,33 @@ public class Solution {
 	}
     }
     
-    int[] getAnswerForSolution(testCases) {
+int[] getAnswerForSolution(testCases) {
+	resultCases = new int[15];
+	while(testCases.isNotNull()) {
+
+		int noFromArray = 0;
+		int noFromChar = 0;
+		int countOfNumbers = 0;
+		int number = testCases[noFromArray];	
+		String digit = String.ValueOf(testCases[noFromArray]);
+		int countCharDigit = digit.count();
+		while(int noFromChar  <= countCharDigit ) {
+			int digit = (int) digit.CharAt(noFromChar );
+			if(digit == 0)
+				++noFromChar;
+			else {
+				if(number%digit == 0) {
+					++noFromChar;
+					++countOfNumbers;
+				}
+				else
+					++noFromChar;
+			}
+		resultCases[noFromArray] = countOfNumbers;
+		} 
+		++noFromArray;
 	}
+	return resultCases;
+}
+
 }
