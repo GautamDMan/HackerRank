@@ -2,7 +2,7 @@ Enter file contents here
 
 int isAnaPali(String input) {
 
-    int lCount = 0, rCount = 0;
+    int lCount = 0, rCount = 1;
     int finalLength = 0;
     while(lCount < input.length()) {
         rCount = lCount;
